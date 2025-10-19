@@ -6,6 +6,6 @@ Me apasiona construir soluciones digitales con estilo y propósito — desde web
 🛠️ Me gusta que mi código sea limpio, útil y (por qué no) un poco bonito.
 🤝 Además, disfruto colaborar en proyectos que mezclen creatividad, tecnología y trabajo en equipo.
 
-🚀 Actualmente estudio Desarrollo de Aplicaciones Web (CFGS) y sigo buscando nuevos retos donde crecer como desarrolladora y aportar valor real.
+🚀 Acabo de finalizar mis estudios de Desarrollo de Aplicaciones Web (CFGS) y sigo buscando nuevos retos donde crecer como desarrolladora y aportar valor real.
 
 📍 Sevilla | 💬 Inglés medio | 💻 #HTML #CSS #JavaScript #Laravel #WordPress #GitHub
