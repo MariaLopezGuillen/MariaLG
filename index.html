@@ -7,21 +7,28 @@
     <title>Maria LG | PortFolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <script src="assets\js\johndoe.js"></script>
     <!-- Bootstrap + Marialg main styles -->
     <link rel="stylesheet" href="assets/css/marialg.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i
-            class="ti-shift-left-alt"></i> Components</a>
+
     <header class="header">
         <div class="container">
             <ul class="social-icons pt-3">
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-linkedin"
-                            aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github"
-                            aria-hidden="true"></i></a></li>
+                <li class="social-item">
+                    <a class="social-link text-light"
+                        href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="ti-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a class="social-link text-light" href="https://github.com/MariaLopezGuillen" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="ti-github" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
             <div class="header-content">
                 <h4 class="header-subtitle">Hola soy</h4>
@@ -30,6 +37,7 @@
             </div>
         </div>
     </header>
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
@@ -64,6 +72,7 @@
             </div>
         </div>
     </nav>
+
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
@@ -73,6 +82,8 @@
                 <p class="mt-20">Soy desarrolladora de software con muchas ganas de seguir aprendiendo y creando cosas
                     útiles. Me apasiona resolver problemas, explorar nuevas tecnologías y trabajar en equipo para dar
                     vida a proyectos innovadores.</p>
+
+                <!-- SECCIÓN CV CON MODAL -->
                 <section id="curriculum" class="cv-section">
                     <h2>📄 Mi Currículum</h2>
                     <p class="cv-description">
@@ -83,32 +94,28 @@
                     </button>
                 </section>
 
-                <!-- Modal del CV -->
-                <div id="cvModal" class="cv-modal">
-                    <div class="cv-modal-content">
-                        <span class="cv-modal-close" onclick="closeCVModal()">×</span>
-                        <iframe src="assets/doc/CV Maria_Lopez_Guillen.pdf" class="cv-iframe"></iframe>
-                        <a href="assets/doc/CV Maria_Lopez_Guillen.pdf" download class="btn-download-from-modal">
-                            📥 Descargar CV
-                        </a>
-                    </div>
-                </div>
-
             </div>
             <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Información Personal
-                </h3>
+                <h3 class="font-weight-light">Información Personal</h3>
                 <span class="line mb-5"></span>
                 <ul class="mt40 info list-unstyled">
                     <li><span>Email</span> : mariialg21@gmail.com</li>
-                    <li><span>Dirección</span> : Sevilla,Andalucía</li>
+                    <li><span>Dirección</span> : Sevilla, Andalucía</li>
                 </ul>
                 <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link"
-                            href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"><i
-                                class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/MariaLopezGuillen"><i
-                                class="ti-github" aria-hidden="true"></i></a></li>
+                    <li class="social-item">
+                        <a class="social-link"
+                            href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="ti-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link" href="https://github.com/MariaLopezGuillen" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="ti-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="col-lg-4 about-card">
@@ -118,7 +125,6 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Desarrollador Web</h6>
-                        <!-- <p class="subtitle"> exercitat Repellendus, corrupt.</p> -->
                         <hr>
                     </div>
                 </div>
@@ -126,7 +132,6 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Diseñadora Web</h6>
-                        <!-- <p class="subtitle">Lorem ipsum dolor sit consectetur.</p> -->
                         <hr>
                     </div>
                 </div>
@@ -134,7 +139,6 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Marketing Digital</h6>
-                        <!-- <p class="subtitle">voluptate commodi illo voluptatib.</p> -->
                         <hr>
                     </div>
                 </div>
@@ -142,11 +146,21 @@
                     <div class="col-1 text-danger pt-1"><i class="ti-angle-double-left icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
                         <h6>Tecnico Informatico</h6>
-                        <!-- <p class="subtitle">voluptate commodi illo voluptatib.</p> -->
                         <hr>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Modal del CV -->
+    <div id="cvModal" class="cv-modal">
+        <div class="cv-modal-content">
+            <span class="cv-modal-close" onclick="closeCVModal()">&times;</span>
+            <iframe src="assets/doc/CV Maria_Lopez_Guillen.pdf" class="cv-iframe"></iframe>
+            <a href="assets/doc/CV Maria_Lopez_Guillen.pdf" download class="btn-download-from-modal">
+                📥 Descargar CV
+            </a>
         </div>
     </div>
 
@@ -280,249 +294,31 @@
         </div>
     </section>
 
-    <!-- <section class="section bg-dark text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">500</h1>
-                            <p class="text-light mb-1">Hours Worked</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">50K</h1>
-                            <p class="text-light mb-1">Project Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">200K</h1>
-                            <p class="text-light mb-1">Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2k</h1>
-                            <p class="text-light mb-1">Coffee Drinked</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Ullam</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-write text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Asperiores</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-package text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Tempora</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Provident</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-bar-chart text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Consectetur</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                        <div class="card-header has-icon">
-                            <i class="ti-support text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Veritatis</h5>
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi
-                                provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In
-                                praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit
-                                blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- 
-    <section class="section bg-custom-gray" id="price">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Packs</span> Pricing</h1>
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Free</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">0</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">5 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item"><span class="text-muted">No Domain</span></li>
-                            <li class="list-item">1 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Basic</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">10</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">50 <span class="text-muted">Project</span></li>
-                            <li class="list-item">10GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">1<span class="text-muted">Domain</span></li>
-                            <li class="list-item">5 <span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center price-card-requried mb-4">
-                        <h3 class="price-card-title">Exclusive</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">25</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">150 <span class="text-muted">Project</span></li>
-                            <li class="list-item">15GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">5<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">15<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="price-card text-center mb-4">
-                        <h3 class="price-card-title">Pro</h3>
-                        <div class="price-card-cost">
-                            <sup class="ti-money"></sup>
-                            <span class="num">99</span>
-                            <span class="date">MO</span>
-                        </div>
-                        <ul class="list">
-                            <li class="list-item">500 <span class="text-muted">Project</span></li>
-                            <li class="list-item">1000GB <span class="text-muted">Storage</span></li>
-                            <li class="list-item">10<span class="text-muted"> Domain</span></li>
-                            <li class="list-item">Unlimite<span class="text-muted">User</span></li>
-                        </ul>
-                        <button class="btn btn-primary btn-rounded w-lg">Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For FreeLance</h2>
-            <button class="btn bg-primary w-lg">Hire me</button>
-        </div>
-    </section> -->
-
     <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
         <div class="container">
             <h1 class="mb-5"><span class="text-danger">Mis</span> Proyectos</h1>
             <div class="portfolio">
                 <div class="filters">
-                    <a href="#" data-filter=".web">
-                        Web
-                    </a>
+                    <a href="#" data-filter=".web">Web</a>
                 </div>
                 <div class="portfolio-container">
+
+                    <!-- PROYECTO 1: Azahares Flamenca -->
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/azahares.png" class="img-fluid" alt="Azahares flamenca ">
+                            <a href="https://azaharesflamenca.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/azahares.png" class="img-fluid" alt="Azahares flamenca">
+                            </a>
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/azahares.png"></a>
                                 <div class="text-holder">
-                                    <h6 class="title">Azahares Flamenca</h6>
+                                    <h6 class="title">
+                                        <a href="https://azaharesflamenca.com" target="_blank"
+                                            style="color: inherit; text-decoration: none;">
+                                            Azahares Flamenca 🔗
+                                        </a>
+                                    </h6>
                                     <p class="subtitle">Desarrollo completo de e-commerce desde cero, incluyendo
                                         asesoría en la contratación de hosting y dominio, optimización SEO on-page y
                                         técnica, y configuración para un rendimiento rápido, seguro y escalable.</p>
@@ -530,14 +326,22 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- PROYECTO 2: Donas Publicidad -->
                     <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/donaspublicidad.png" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <a href="https://donaspublicidad.com" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/donaspublicidad.png" class="img-fluid" alt="Donas Publicidad">
+                            </a>
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/donaspublicidad.png"></a>
                                 <div class="text-holder">
-                                    <h6 class="title">Donas Publicidad</h6>
+                                    <h6 class="title">
+                                        <a href="https://donaspublicidad.com" target="_blank"
+                                            style="color: inherit; text-decoration: none;">
+                                            Donas Publicidad 🔗
+                                        </a>
+                                    </h6>
                                     <p class="subtitle">Rediseño y mantenimiento integral de e-commerce, con
                                         optimización SEO continua y gestión completa de catálogo (creación,
                                         actualización y subida de productos) para mejorar el rendimiento, la usabilidad
@@ -545,251 +349,64 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <img src="assets/imgs/figurable.png" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/figurable.png"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">Figurable Collectibles</h6>
-                                    <p class="subtitle">Rediseño y mantenimiento integral de e-commerce, con
-                                        optimización SEO continua y gestión completa de catálogo (creación,
-                                        actualización y subida de productos) para mejorar el rendimiento, la usabilidad
-                                        y las conversiones.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 web">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/figurable.png" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/figurable.png"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
 
-                    <div class="col-md-6 col-lg-4 advertising">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-1.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-lg-4 web new">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/web-3.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">WEB</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/advertising-3.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">ADVERSITING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
+                    <!-- PROYECTO 3: Figurable Collectibles -->
                     <div class="col-md-6 col-lg-4 advertising new">
                         <div class="portfolio-item">
-                            <img src="assets/imgs/encarmona.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <a href="https://figurable.es" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/figurable.jpg" class="img-fluid" alt="Figurable Collectibles">
+                            </a>
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/encarmona.jpg"></a>
+                                <a class="img-popup" href="assets/imgs/figurable.jpg"></a>
                                 <div class="text-holder">
-                                    <h6 class="title">En Carmona</h6>
-                                    <p class="subtitle">Blog desarrollado desde cero durante mis prácticas, aplicando
-                                        buenas prácticas de SEO, diseño responsive y optimización del rendimiento web.
+                                    <h6 class="title">
+                                        <a href="https://figurable.es" target="_blank"
+                                            style="color: inherit; text-decoration: none;">
+                                            Figurable Collectibles 🔗
+                                        </a>
+                                    </h6>
+                                    <p class="subtitle">
+                                        Rediseño y mantenimiento integral de e-commerce, con
+                                        optimización SEO continua y gestión completa de catálogo (creación,
+                                        actualización y subida de productos) para mejorar el rendimiento, la usabilidad
+                                        y las conversiones.
                                     </p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/branding-1.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                    <!-- PROYECTO 3: Figurable Collectibles
+                    <div class="col-md-6 col-lg-4 advertising new">
+                        <div class="portfolio-item">
+                            <a href="https://figurable.es" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/imgs/figurable.jpg" class="img-fluid" alt="Figurable Collectibles">
+                            </a>
                             <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
+                                <a class="img-popup" href="assets/imgs/figurable.jpg"></a>
                                 <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                                    <h6 class="title">
+                                        <a href="https://figurable.es" target="_blank"
+                                            style="color: inherit; text-decoration: none;">
+                                            Figurable Collectibles 🔗
+                                        </a>
+                                    </h6>
+                                    <p class="subtitle">
+                                        Rediseño y mantenimiento integral de e-commerce, con
+                                        optimización SEO continua y gestión completa de catálogo (creación,
+                                        actualización y subida de productos) para mejorar el rendimiento, la usabilidad
+                                        y las conversiones.
+                                    </p>
                                 </div>
                             </div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/branding-2.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding new">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/branding-3.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/branding-4.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="col-md-6 col-lg-4 branding">
-                        <!-- <div class="portfolio-item">
-                            <img src="assets/imgs/branding-5.jpg" class="img-fluid"
-                                alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">BRANDING</h6>
-                                    <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of portfolio section -->
 
-    <!-- <section class="section" id="blog">
-        <div class="container">
-            <h2 class="mb-5">Latest <span class="text-danger">News</span></h2>
-            <div class="row">
-                <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog1.jpg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Consectetur adipisicing elit</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                            <a href="#"><i class="ti-comment"></i> 123</a>
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
-                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
-                            neque numquam mollitia modi quasi distinctio.</p>
-
-                        <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
-                        </p>
-                        <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><end of blog wrapper -->
-
-    <!-- blog-card -->
-    <!-- <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog2.jpg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h6 class="title">Explicabo illo</h6>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                            <a href="#"><i class="ti-comment"></i> 264</a>
-                        </p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,
-                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro
-                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto
-                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?
-                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non
-                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus
-                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div>end of blog wrapper -->
-    <!-- blog-card -->
-    <!-- <div class="blog-card">
-                    <div class="img-holder">
-                        <img src="assets/imgs/blog3.jpg"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                    </div>
-                    <div class="content-holder">
-                        <h4 class="title">Porro Quisqua</h4>
-
-                        <p class="post-details">
-                            <a href="#">By: Admin</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 431</a>
-                            <a href="#"><i class="ti-comment"></i> 312</a>
-                        </p>
-
-                        <p> consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad
-                            iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem
-                            aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum
-                            placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis
-                            similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis
-                            quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio
-                            sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                        <a href="#" class="read-more">Read more <i class="ti-angle-double-right"></i></a>
-                    </div>
-                </div><!
-
-            </div>
-        </div>
-    </section> -->
-
+    <!-- Contact Section -->
     <div class="section contact" id="contact">
         <div class="container">
             <div class="row">
@@ -811,20 +428,11 @@
                                 <button type="submit" class="form-control btn btn-primary">Enviar</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-info-card">
                         <h4 class="contact-title">Más Información</h4>
-                        <!-- <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (123) 456-789</span></h6>
-                            </div>
-                        </div> -->
                         <div class="row mb-2">
                             <div class="col-1 pt-1 mr-1">
                                 <i class="ti-map-alt icon-md"></i>
@@ -843,45 +451,64 @@
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-dark"
-                                    href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"><i
-                                        class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark"
-                                    href="https://github.com/MariaLopezGuillen"><i class="ti-github"
-                                        aria-hidden="true"></i></a></li>
+                            <li class="social-item">
+                                <a class="social-link text-dark"
+                                    href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link text-dark" href="https://github.com/MariaLopezGuillen"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="ti-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Creado </i> Por <a href="index.html"
-                    target="_blank"><span class="text-danger" title="Portfolio">Maria López</span></a>
+                <script>document.write(new Date().getFullYear())</script> Creado por
+                <a href="index.html" target="_blank">
+                    <span class="text-danger" title="Portfolio">Maria López</span>
+                </a>
             </p>
         </div>
     </footer>
 
-    <!-- core  -->
+    <!-- core scripts -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Isotope  -->
     <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-
-    <!-- Google mpas -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
-
-    <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+
+    <!-- Script para el Modal del CV -->
+    <script>
+        // Funciones para abrir/cerrar modal del CV
+        function openCVModal() {
+            document.getElementById('cvModal').style.display = 'block';
+        }
+
+        function closeCVModal() {
+            document.getElementById('cvModal').style.display = 'none';
+        }
+
+        // Cerrar al hacer clic fuera del modal
+        window.onclick = function (event) {
+            const modal = document.getElementById('cvModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 
 </body>
 
