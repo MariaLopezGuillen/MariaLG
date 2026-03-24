@@ -1,519 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>María LG — Desarrolladora Web</title>
-    <meta name="description"
-        content="Portfolio de María LG, desarrolladora web con proyectos en HTML, CSS y JavaScript.">
-    <link rel="canonical" href="https://maria-lg.vercel.app/">
-    <meta name="google-site-verification" content="520dscz5TcgS7uIa8oQkX0lYInWq_UV2QkOC6b5lgHI" />
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Marialg main styles -->
-    <link rel="stylesheet" href="assets/css/marialg.css">
+  <meta charset="UTF-8">
+  <title>María López | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/marialg.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body>
 
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item">
-                    <a class="social-link text-light"
-                        href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"
-                        target="_blank" rel="noopener noreferrer">
-                        <i class="ti-linkedin" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="social-item">
-                    <a class="social-link text-light" href="https://github.com/MariaLopezGuillen" target="_blank"
-                        rel="noopener noreferrer">
-                        <i class="ti-github" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-            <div class="header-content">
-                <h4 class="header-subtitle">Hola soy</h4>
-                <h1 class="header-title">María López</h1>
-                <h6 class="header-mono">Desarrolladora Junior FullStack | Tecnico Informatico</h6>
-            </div>
-        </div>
-    </header>
+<!-- NAV -->
+<nav class="nav">
+  <h2>María López</h2>
+  <ul>
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre Mi</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/imgs/yo.jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">María M. López</h5>
-                        <div class="brand-subtitle">Desarrollador Junior FullStack | Tecnico Informatico</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-text">
+    <h1>Desarrolladora Full-Stack Junior</h1>
+    <p>Especializada en WordPress, PHP y optimización web</p>
+    <a href="#proyectos" class="btn">Ver proyectos</a>
+  </div>
+</header>
 
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">¿Quien soy?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">Una desarrolladora Junior FullStack | Tecnico Informatico</h5>
-                <p class="mt-20">Soy desarrolladora de software con muchas ganas de seguir aprendiendo y creando cosas
-                    útiles. Me apasiona resolver problemas, explorar nuevas tecnologías y trabajar en equipo para dar
-                    vida a proyectos innovadores.</p>
+<!-- SOBRE MI -->
+<section id="sobre" class="section">
+  <h2>Sobre mí</h2>
+  <p>
+    Desarrolladora Full-Stack con experiencia real en desarrollo de proyectos web.
+    He liderado más de 5 sitios para clientes, mejorando rendimiento, SEO y conversiones.
+    Me especializo en resolver problemas complejos entre frontend y backend.
+  </p>
+</section>
 
-                <!-- SECCIÓN CV CON MODAL -->
-                <section id="curriculum" class="cv-section">
-                    <h2>📄 Mi Currículum</h2>
-                    <p class="cv-description">
-                        Visualiza mi currículum completo en pantalla completa
-                    </p>
-                    <button onclick="openCVModal()" class="btn-view-cv">
-                        <i class="ti-eye"></i> Ver CV
-                    </button>
-                </section>
+<!-- PROYECTOS -->
+<section id="proyectos" class="section dark">
+  <h2>Proyectos</h2>
 
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Información Personal</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Email</span> : mariialg21@gmail.com</li>
-                    <li><span>Dirección</span> : Sevilla, Andalucía</li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item">
-                        <a class="social-link"
-                            href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="ti-linkedin" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a class="social-link" href="https://github.com/MariaLopezGuillen" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="ti-github" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Mi Experiencia</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Desarrollador Web</h6>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Diseñadora Web</h6>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Marketing Digital</h6>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-angle-double-left icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Tecnico Informatico</h6>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="projects">
+
+    <div class="project-card">
+      <h3>Web corporativa optimizada</h3>
+      <span>WordPress · PHP · SEO</span>
+      <p>
+        Desarrollo de tema personalizado 100% responsive.
+        Incremento del 15% en conversiones y optimización de carga (4.2s → 2.1s).
+      </p>
     </div>
 
-    <!-- Modal del CV -->
-    <div id="cvModal" class="cv-modal">
-        <div class="cv-modal-content">
-            <span class="cv-modal-close" onclick="closeCVModal()">&times;</span>
-            <iframe src="assets/doc/CV Maria_Lopez_Guillen.pdf" class="cv-iframe"></iframe>
-            <a href="assets/doc/CV Maria_Lopez_Guillen.pdf" download class="btn-download-from-modal">
-                📥 Descargar CV
-            </a>
-        </div>
+    <div class="project-card">
+      <h3>Sistema de reservas personalizado</h3>
+      <span>PHP · ACF · Custom Post Types</span>
+      <p>
+        Implementación de sistema a medida eliminando plugins premium y reduciendo carga del servidor en un 40%.
+      </p>
     </div>
 
-    <!--Resume Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">Mi</span> Curriculum</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Experiencia</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">Marzo 2025 - Septiembre 2025</h6>
-                            <P>Desarrolladora Web</P>
-                            <P class="subtitle">Creación de una web corporativa con diseño responsive, totalmente
-                                adaptada a la identidad visual del cliente. Se incluye la implementación de un sistema
-                                de reservas online con gestión de disponibilidad y envío automático de notificaciones.
-                            </P>
-                            <hr>
-                            <h6 class="title text-danger">2023 - 2025</h6>
-                            <P>FreeLance</P>
-                            <P class="subtitle">Desarrollo de página web corporativa en WordPress con
-                                diseño responsive y adaptado a la identidad visual del
-                                cliente.Sistema de reservas online</P>
-                            <hr>
-                            <h6 class="title text-danger">2022 - 2022</h6>
-                            <P>Técnico Informatico</P>
-                            <P class="subtitle">Instalación y manteniemiento de equipos informaticos,configuración de
-                                redes,gestión con servidores,rediseño y manteniemiento de paginas webs</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="mt-2">
-                                <h4>Educación</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="title text-danger">2022 - 2025</h6>
-                            <P>Ciclo Formativo de Grado Superior Desarrollador de Aplicaciones Web</P>
-                            <P class="subtitle">Formación que me permitió adquirir competencias en el diseño,
-                                programación y mantenimiento de sitios y aplicaciones web, integrando el trabajo en
-                                front-end, back-end y bases de datos para crear soluciones digitales completas y
-                                funcionales.</P>
-                            <hr>
-                            <h6 class="title text-danger">2020 - 2022</h6>
-                            <P>Ciclo Formativo de Grado Medio Sistemas Microinformaticos y Redes</P>
-                            <P class="subtitle">Formación que me permitió adquirir competencias en la instalación,
-                                configuración y mantenimiento de equipos informáticos y redes locales, garantizando su
-                                correcto funcionamiento, conectividad y seguridad.</P>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>HTML5 &amp; CSS3</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>JavaScript</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>PHP</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Java</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>jquery</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 30%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Idiomas</h4>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6>Español</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Inglés</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Chino</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
-            <h1 class="mb-5"><span class="text-danger">Mis</span> Proyectos</h1>
-            <div class="portfolio">
-                <div class="filters">
-                    <a href="#" data-filter=".web">Web</a>
-                </div>
-                <div class="portfolio-container">
-
-                    <!-- PROYECTO 1: Azahares Flamenca -->
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <a href="https://azaharesflamenca.com" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/imgs/azahares.png" class="img-fluid" alt="Azahares flamenca">
-                            </a>
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/azahares.png"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">
-                                        <a href="https://azaharesflamenca.com" target="_blank"
-                                            style="color: inherit; text-decoration: none;">
-                                            Azahares Flamenca 🔗
-                                        </a>
-                                    </h6>
-                                    <p class="subtitle">Desarrollo completo de e-commerce desde cero, incluyendo
-                                        asesoría en la contratación de hosting y dominio, optimización SEO on-page y
-                                        técnica, y configuración para un rendimiento rápido, seguro y escalable.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PROYECTO 2: Donas Publicidad -->
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <a href="https://donaspublicidad.com" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/imgs/donaspublicidad.png" class="img-fluid" alt="Donas Publicidad">
-                            </a>
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/donaspublicidad.png"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">
-                                        <a href="https://donaspublicidad.com" target="_blank"
-                                            style="color: inherit; text-decoration: none;">
-                                            Donas Publicidad 🔗
-                                        </a>
-                                    </h6>
-                                    <p class="subtitle">Rediseño y mantenimiento integral de e-commerce, con
-                                        optimización SEO continua y gestión completa de catálogo (creación,
-                                        actualización y subida de productos) para mejorar el rendimiento, la usabilidad
-                                        y las conversiones.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PROYECTO 3: Figurable Collectibles -->
-                    <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <a href="https://figurable.es" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/imgs/figurable.jpg" class="img-fluid" alt="Figurable Collectibles">
-                            </a>
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/figurable.jpg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">
-                                        <a href="https://figurable.eu" target="_blank"
-                                            style="color: inherit; text-decoration: none;">
-                                            Figurable Collectibles 🔗
-                                        </a>
-                                    </h6>
-                                    <p class="subtitle">
-                                        Rediseño y mantenimiento integral de e-commerce, con
-                                        optimización SEO continua y gestión completa de catálogo (creación,
-                                        actualización y subida de productos) para mejorar el rendimiento, la usabilidad
-                                        y las conversiones.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PROYECTO 3: Wiki Disney-->
-                    <div class="col-md-6 col-lg-4 advertising new">
-                        <div class="portfolio-item">
-                            <a href="https://wikidisney.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                <img src="assets\imgs\Disney+_2024.svg" class="img-fluid" alt="Wiki Disney">
-                            </a>
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets\imgs\Disney+_2024.svg"></a>
-                                <div class="text-holder">
-                                    <h6 class="title">
-                                        <a href="https://wikidisney.vercel.app/" target="_blank"
-                                            style="color: inherit; text-decoration: none;">
-                                            Wiki Disney 🔗
-                                        </a>
-                                    </h6>
-                                    <p class="subtitle">
-                                        Creción de una wiki colaborativa sobre el universo Disney, con diseño responsive
-                                        y adaptado a la identidad visual del proyecto. Se ha usado HTML, CSS y
-                                        JavaScript para crear una experiencia de usuario atractiva y fácil de navegar,
-                                        permitiendo a los usuarios explorar información detallada sobre personajes,
-                                        películas, parques temáticos y más.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <div class="section contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Trabajemos Juntos</h4>
-                        <form action="https://formspree.io/f/mdkwlwor" method="POST">
-                            <div class="form-group">
-                                <input class="form-control" type="text" name="nombre" placeholder="Nombre *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" name="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="mensaje" placeholder="Mensaje *" rows="7"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Más Información</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Dirección :<br> <span class="text-muted">Sevilla</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Correo electronico :<br> <span
-                                        class="text-muted">mariialg21@gmail.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item">
-                                <a class="social-link text-dark"
-                                    href="https://www.linkedin.com/in/mar%C3%ADa-minque-l%C3%B3pez-guill%C3%A9n-7a3529258/"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <i class="ti-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a class="social-link text-dark" href="https://github.com/MariaLopezGuillen"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <i class="ti-github" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="project-card">
+      <h3>Ecommerce WooCommerce</h3>
+      <span>WordPress · WooCommerce</span>
+      <p>
+        Creación de tienda online con integración de pagos, optimización UX y mantenimiento técnico continuo.
+      </p>
     </div>
 
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light">
-                &copy;
-                <script>document.write(new Date().getFullYear())</script> Creado por
-                <a href="index.html" target="_blank">
-                    <span class="text-danger" title="Portfolio">Maria López</span>
-                </a>
-            </p>
-        </div>
-    </footer>
+  </div>
+</section>
 
-    <!-- core scripts -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    <script src="assets/js/johndoe.js"></script>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Habilidades</h2>
 
-    <!-- Script para el Modal del CV -->
-    <script>
-        // Funciones para abrir/cerrar modal del CV
-        function openCVModal() {
-            document.getElementById('cvModal').style.display = 'block';
-        }
+  <div class="skills">
 
-        function closeCVModal() {
-            document.getElementById('cvModal').style.display = 'none';
-        }
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Java</div>
+    <div class="skill">Spring Boot</div>
+    <div class="skill">PHP</div>
+    <div class="skill">WordPress</div>
+    <div class="skill">Laravel</div>
+    <div class="skill">SQL</div>
+    <div class="skill">Git</div>
+    <div class="skill">SEO</div>
+    <div class="skill">Angular</div>
+    <div class="skill">Bootstrap</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Optimización Web</div>
+    <div class="skill">WooCommerce</div>
+    <div class="skill">Mantenimiento Técnico</div>
+    <div class="skill">Resolución de Problemas</div>
+    <div class="skill">Trabajo en Equipo</div>
+    <div class="skill">Comunicación Efectiva</div>
+    <div class="skill">Gestión de Proyectos</div>
+    <div class="skill">Adaptabilidad</div>
+    <div class="skill">Aprendizaje Continuo</div>
+    <div class="skill">Creatividad</div>
+    <div class="skill">Pensamiento Crítico</div>
+    <div class="skill">Atención al Detalle</div>
+    <div class="skill">Gestión del Tiempo</div>
 
-        // Cerrar al hacer clic fuera del modal
-        window.onclick = function (event) {
-            const modal = document.getElementById('cvModal');
-            if (event.target == modal) {
-                modal.style.display = 'none';
-            }
-        }
-    </script>
+
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact-full">
+  <div class="contact-container">
+    <h2>Contacto</h2>
+    <p>Email: mariialg21@gmail.com</p>
+  </div>
+</section>
+
+<footer class="footer-full">
+  <p>© 2026 María López Guillén</p>
+</footer>
 
 </body>
-
 </html>
