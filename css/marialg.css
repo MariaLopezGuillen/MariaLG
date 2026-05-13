@@ -10,25 +10,35 @@ body {
   color: #e2e8f0;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
+
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  background: #020617;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  align-items: center;
+
+  padding: 18px 30px;
+
+  background: rgba(2, 6, 23, 0.92);
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
 }
 
 .nav h2 {
   color: #38bdf8;
 }
 
-.nav ul {
+.nav-links {
   display: flex;
+  gap: 25px;
   list-style: none;
-  gap: 20px;
 }
 
 .nav a {
@@ -42,7 +52,48 @@ body {
   color: #38bdf8;
 }
 
-/* HERO */
+/* =========================
+   HAMBURGUESA (oculta en escritorio)
+========================= */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #e2e8f0;
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animación → X al abrir */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
   height: 90vh;
   display: flex;
@@ -61,7 +112,10 @@ body {
   margin-bottom: 20px;
 }
 
-/* BOTÓN */
+/* =========================
+   BOTÓN
+========================= */
+
 .btn {
   background: #38bdf8;
   color: #020617;
@@ -76,7 +130,10 @@ body {
   transform: scale(1.05);
 }
 
-/* SECCIONES */
+/* =========================
+   SECCIONES
+========================= */
+
 .section {
   padding: 80px 40px;
   max-width: 1100px;
@@ -92,25 +149,25 @@ body {
   background: #020617;
 }
 
-/* PROYECTOS GRID */
+/* =========================
+   PROYECTOS GRID
+========================= */
+
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-/* CARD PRO */
 .project-card {
   background: #1e293b;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-
   transform-style: preserve-3d;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* IMAGEN */
 .project-card img {
   width: 100%;
   height: 200px;
@@ -118,14 +175,12 @@ body {
   transition: transform 0.4s ease;
 }
 
-/* HOVER 3D */
 .project-card:hover {
   transform: translateY(-12px) scale(1.02) rotateX(5deg) rotateY(-5deg);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
   background: #334155;
 }
 
-/* ZOOM IMAGEN */
 .project-card:hover img {
   transform: scale(1.08);
 }
@@ -135,7 +190,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* CONTENIDO */
 .project-content {
   padding: 20px;
 }
@@ -146,7 +200,10 @@ body {
   color: #cbd5f5;
 }
 
-/* TAGS */
+/* =========================
+   TAGS
+========================= */
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -161,9 +218,9 @@ body {
   color: #38bdf8;
 }
 
-/* ========================= */
-/* OVERLAY PROYECTOS */
-/* ========================= */
+/* =========================
+   OVERLAY PROYECTOS
+========================= */
 
 .overlay {
   position: absolute;
@@ -171,18 +228,15 @@ body {
   left: 0;
   width: 100%;
   height: 200px;
-
   background: rgba(0, 0, 0, 0.75);
-
+  backdrop-filter: blur(3px);
   display: flex;
   justify-content: center;
   align-items: center;
-
   opacity: 0;
   transition: all 0.3s ease;
 }
 
-/* BOTÓN OVERLAY */
 .overlay-btn {
   background: #38bdf8;
   color: #020617;
@@ -190,12 +244,10 @@ body {
   border-radius: 20px;
   text-decoration: none;
   font-weight: 600;
-
   transform: translateY(20px);
   transition: all 0.3s ease;
 }
 
-/* HOVER OVERLAY */
 .project-card:hover .overlay {
   opacity: 1;
 }
@@ -204,12 +256,10 @@ body {
   transform: translateY(0);
 }
 
-/* EXTRA PRO */
-.overlay {
-  backdrop-filter: blur(3px);
-}
+/* =========================
+   SKILLS
+========================= */
 
-/* SKILLS */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -224,7 +274,10 @@ body {
   font-weight: 500;
 }
 
-/* CONTACTO */
+/* =========================
+   CONTACTO
+========================= */
+
 .contact-full {
   width: 100%;
   background: #020617;
@@ -238,12 +291,14 @@ body {
   gap: 10px;
 }
 
-/* BOTÓN CONTACTO */
 .contact-container .btn {
   margin-top: 20px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
+
 .footer-full {
   width: 100%;
   background: #020617;
@@ -252,72 +307,53 @@ body {
   border-top: 1px solid #1e293b;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+/* =========================
+   RESPONSIVE MÓVIL
+========================= */
 
+@media (max-width: 768px) {
+
+  /* NAV */
   .nav {
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    padding: 18px 20px;
   }
-}
 
+  .nav h2 {
+    font-size: 1.4rem;
+  }
 
+  /* HAMBURGUESA visible en móvil */
+  .hamburger {
+    display: flex;
+  }
 
-/* =========================
-   NAVBAR NUEVO
-========================= */
+  /* MENÚ MÓVIL */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 64px;
+    right: 20px;
+    width: 220px;
+    background: #0f172a;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    order: 3;
+  }
 
-.nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  /* Menú abierto */
+  .nav-links.open {
+    display: flex;
+  }
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .nav-links li {
+    list-style: none;
+  }
 
-  padding: 18px 30px;
-
-  background: rgba(2, 6, 23, 0.92);
-
-  backdrop-filter: blur(10px);
-
-  z-index: 1000;
-}
-
-/* LINKS */
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-/* BOTON HAMBURGUESA */
-
-.menu-toggle {
-  display: none;
-
-  background: none;
-  border: none;
-
-  color: white;
-
-  font-size: 2rem;
-
-  cursor: pointer;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-  /* HERO MÁS COMPACTO */
+  /* HERO */
   .hero {
     padding: 120px 20px 60px;
     height: auto;
@@ -332,49 +368,6 @@ body {
   .hero p {
     font-size: 1rem;
     line-height: 1.6;
-  }
-
-  /* HAMBURGUESA */
-  .menu-toggle {
-    display: block;
-  }
-
-  /* MENU MOVIL */
-  .nav-links {
-    position: absolute;
-
-    top: 80px;
-    right: 20px;
-
-    width: 220px;
-
-    background: #0f172a;
-
-    border-radius: 18px;
-
-    padding: 20px;
-
-    display: none;
-
-    flex-direction: column;
-
-    gap: 18px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  }
-
-  /* MENU ACTIVO */
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    list-style: none;
-  }
-
-  /* TITULO NAV */
-  .nav h2 {
-    font-size: 1.4rem;
   }
 
   /* SECCIONES */

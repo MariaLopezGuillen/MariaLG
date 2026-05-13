@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/marialg.css">
     <link rel="shortcut icon" href="imgs/maria.png" type="image/x-icon">
-    <script src="js/marialg.js"></script>
+    <script src="js/marialg.js" defer></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -18,6 +18,14 @@
     <!-- NAV -->
     <nav class="nav">
         <h2>María López</h2>
+
+        <!-- BOTÓN HAMBURGUESA (solo visible en móvil) -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <ul class="nav-links" id="nav-links">
             <li><a href="#sobre">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
@@ -66,8 +74,7 @@
                 <div class="project-content">
                     <h3>Mi Portfolio</h3>
                     <p>
-                        Desarrollo de portfolio persoal con HTML, CSS y JavaScript, optimizado para SEO y rendimiento.
-
+                        Desarrollo de portfolio personal con HTML, CSS y JavaScript, optimizado para SEO y rendimiento.
                     </p>
 
                     <div class="tags">
@@ -158,8 +165,7 @@
                     <h3>Donas Publicidad</h3>
                     <p>
                         Desarrollo de sitio web para empresa de publicidad con WordPress, optimización SEO y mejoras de
-                        rendimiento, logrando un aumento
-                        del 30% en tráfico orgánico.
+                        rendimiento, logrando un aumento del 30% en tráfico orgánico.
                     </p>
                     <div class="tags">
                         <span>WordPress</span>
@@ -169,6 +175,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- PROYECTO 6 -->
             <div class="project-card">
                 <img src="imgs/azahares.png" alt="Azahares">
@@ -181,9 +188,7 @@
                     <h3>Azahares</h3>
                     <p>
                         Desarrollo de sitio web para tienda online de traje de flamenca y accesorios con WordPress,
-                        optimización SEO y mejoras de
-                        rendimiento, logrando un aumento
-                        del 30% en tráfico orgánico.
+                        optimización SEO y mejoras de rendimiento, logrando un aumento del 30% en tráfico orgánico.
                     </p>
 
                     <div class="tags">
@@ -195,7 +200,6 @@
                 </div>
             </div>
 
-
         </div>
     </section>
 
@@ -204,7 +208,6 @@
         <h2>Habilidades</h2>
 
         <div class="skills">
-
             <div class="skill">HTML5</div>
             <div class="skill">CSS3</div>
             <div class="skill">JavaScript</div>
@@ -232,9 +235,6 @@
             <div class="skill">Pensamiento Crítico</div>
             <div class="skill">Atención al Detalle</div>
             <div class="skill">Gestión del Tiempo</div>
-
-
-
         </div>
     </section>
 
