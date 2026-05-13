@@ -307,6 +307,49 @@ body {
   border-top: 1px solid #1e293b;
 }
 
+.footer-copy {
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   CONTACTO SOCIAL
+========================= */
+
+.contact-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.contact-social a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: 25px;
+  border: 1px solid #1e293b;
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  color: #38bdf8;
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+}
+
+.contact-social svg {
+  flex-shrink: 0;
+}
+
 /* =========================
    RESPONSIVE MÓVIL
 ========================= */
