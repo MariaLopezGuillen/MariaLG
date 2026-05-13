@@ -263,3 +263,127 @@ body {
     gap: 10px;
   }
 }
+
+
+
+/* =========================
+   NAVBAR NUEVO
+========================= */
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 30px;
+
+  background: rgba(2, 6, 23, 0.92);
+
+  backdrop-filter: blur(10px);
+
+  z-index: 1000;
+}
+
+/* LINKS */
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* BOTON HAMBURGUESA */
+
+.menu-toggle {
+  display: none;
+
+  background: none;
+  border: none;
+
+  color: white;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  /* HERO MÁS COMPACTO */
+  .hero {
+    padding: 120px 20px 60px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* HAMBURGUESA */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* MENU MOVIL */
+  .nav-links {
+    position: absolute;
+
+    top: 80px;
+    right: 20px;
+
+    width: 220px;
+
+    background: #0f172a;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  /* MENU ACTIVO */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    list-style: none;
+  }
+
+  /* TITULO NAV */
+  .nav h2 {
+    font-size: 1.4rem;
+  }
+
+  /* SECCIONES */
+  .section {
+    padding: 60px 20px;
+  }
+
+  /* CARDS */
+  .project-card {
+    border-radius: 20px;
+  }
+}
