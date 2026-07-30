@@ -94,13 +94,27 @@ body {
    HERO
 ========================= */
 
-.hero {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+.hero{
+    position: relative;
+    overflow: hidden;
+
+    height: 90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+        linear-gradient(
+            rgba(8,15,32,.72),
+            rgba(8,15,32,.82)
+        ),
+        url("../imgs/banner.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h1 {
