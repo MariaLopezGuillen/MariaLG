@@ -3,441 +3,766 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>María López | Desarrolladora Full Stack — Laravel & React</title>
+    <title>María López Guillén | Desarrolladora Full Stack Junior — Laravel &amp; React</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de María López, desarrolladora Full Stack junior especializada en Laravel y React. Proyectos reales: plataforma anti-bullying, ecommerce y más.">
+    <meta name="description"
+        content="Portfolio de María López Guillén, desarrolladora Full Stack Junior graduada en DAW. Proyectos reales en Laravel, React, PHP y WordPress. Disponible para incorporarse a un equipo de desarrollo.">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://maria-lg.vercel.app/">
 
-    <meta property="og:title" content="María López | Desarrolladora Full Stack">
-    <meta property="og:description" content="Portfolio con proyectos reales en Laravel, React y WordPress.">
+    <meta property="og:title" content="María López Guillén | Desarrolladora Full Stack Junior">
+    <meta property="og:description"
+        content="Proyectos reales en Laravel, React y WordPress. Graduada en DAW, en busca de un equipo de desarrollo.">
     <meta property="og:image" content="https://maria-lg.vercel.app/imgs/banner.png">
     <meta property="og:url" content="https://maria-lg.vercel.app/">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="María López Guillén | Desarrolladora Full Stack Junior">
+    <meta name="twitter:description"
+        content="Proyectos reales en Laravel, React y WordPress. Graduada en DAW, en busca de un equipo de desarrollo.">
+    <meta name="theme-color" content="#06080f">
 
     <link rel="stylesheet" href="css/marialg.css">
     <link rel="shortcut icon" href="imgs/maria.png" type="image/x-icon">
+
+    <!-- Preconnect + Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (código/etiquetas) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Schema.org: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "María López Guillén",
+      "url": "https://maria-lg.vercel.app/",
+      "jobTitle": "Desarrolladora Full Stack Junior",
+      "email": "mailto:marialgwork@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sevilla",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://github.com/MariaLopezGuillen",
+        "https://www.linkedin.com/in/mar%C3%ADa-m-l%C3%B3pez-guill%C3%A9n-7a3529258"
+      ],
+      "knowsAbout": ["Laravel", "PHP", "React", "JavaScript", "MySQL", "WordPress", "Java"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "CFGS Desarrollo de Aplicaciones Web"
+      }
+    }
+    </script>
+
     <script src="js/marialg.js" defer></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <base target="_blank">
 </head>
 
 <body>
 
-    <!-- NAV -->
-    <nav class="nav">
-        <h2>María López</h2>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-        <!-- BOTÓN HAMBURGUESA (solo visible en móvil) -->
-        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+    <!-- ==========================================================
+         NAV
+    =========================================================== -->
+    <header class="nav" id="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo" aria-label="Inicio">
+                <span class="nav-logo-prompt">maria</span><span class="nav-logo-accent">.dev</span>
+            </a>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#sobre">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+            <nav class="nav-primary" aria-label="Navegación principal">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#sobre" data-nav-link>Sobre mí</a></li>
+                    <li><a href="#proyectos" data-nav-link>Proyectos</a></li>
+                    <li><a href="#tecnologias" data-nav-link>Tecnologías</a></li>
+                    <li><a href="#trayectoria" data-nav-link>Trayectoria</a></li>
+                    <li><a href="#contacto" class="nav-cta" data-nav-link>Contactar</a></li>
+                </ul>
+            </nav>
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1><strong>Desarrolladora Web Full-Stack</strong></h1>
-            <p>
-                Graduada en <b>Desarrollo de Aplicaciones Web</b> con experiencia desarrollando proyectos Full Stack
-                utilizando
-                <b>Laravel, PHP, JavaScript, Java y SQL</b>. Me apasiona crear aplicaciones <b>mantenibles, optimizadas
-                    y
-                    accesibles</b>, y seguir creciendo como desarrolladora dentro de un <b>equipo de desarrollo</b>.
-            </p>
-            <a href="#proyectos" class="btn">Ver proyectos</a>
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
+    <main id="contenido">
 
-    <!-- SOBRE MI -->
-    <section id="sobre" class="section">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy <b>Desarrolladora Web Full Stack</b> graduada en <b>Desarrollo de Aplicaciones Web (DAW)</b>, con
-            experiencia desarrollando <b>proyectos Full Stack</b> utilizando <b>Laravel, PHP, JavaScript, Java y
-                SQL</b>.
-        </p>
+        <!-- ==========================================================
+             HERO
+        =========================================================== -->
+        <section class="hero" id="top">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-inner">
+                <p class="eyebrow-badge">
+                    <span class="eyebrow-dot"></span>
+                    Buscando incorporarme a un equipo de desarrollo
+                </p>
 
-        <p>
-            Me gusta desarrollar aplicaciones <b>mantenibles, escalables, accesibles y optimizadas</b>, aplicando buenas
-            prácticas de desarrollo, código limpio y una arquitectura que facilite su evolución y mantenimiento.
-            Disfruto resolviendo problemas, aprendiendo nuevas tecnologías y mejorando continuamente la calidad de cada
-            proyecto.
-        </p>
+                <h1 class="hero-title">
+                    <span class="hero-title-name">María López Guillén</span>
+                    <span class="text-accent">Desarrolladora Full Stack Junior</span>
+                </h1>
 
-        <p>
-            Mi objetivo es formar parte de un <b>equipo de desarrollo</b> donde pueda seguir creciendo profesionalmente,
-            colaborar en proyectos desafiantes y contribuir al desarrollo de productos digitales de calidad, aportando
-            compromiso, capacidad de aprendizaje y atención al detalle.
-        </p>
-    </section>
+                <p class="hero-lead">
+                    Graduada en Desarrollo de Aplicaciones Web. Construyo interfaces con React
+                    y APIs con Laravel y PHP, y he llevado varios proyectos completos a
+                    producción cuidando el rendimiento, el SEO técnico y la accesibilidad.
+                </p>
 
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section dark">
-        <h2>Proyectos</h2>
-        <h2 style="text-align: center;">Del concepto al código</h2>
-        <div class="projects">
-
-            <!-- PROYECTO 1 -->
-            <div class="project-card">
-                <img src="imgs/maria.png" alt="Web corporativa">
-
-                <div class="overlay">
-                    <a href="https://maria-lg.vercel.app/" class="overlay-btn">Ver código</a>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                    <a href="cv/Maria-Lopez-Guillen-CV.pdf" class="btn btn-ghost" target="_blank"
+                        rel="noopener">Descargar CV</a>
                 </div>
 
-                <div class="project-content">
-                    <h3>Mi Portfolio</h3>
+                <p class="hero-meta" aria-hidden="true">
+                    <span>Laravel</span>
+                    <span aria-hidden="true">·</span>
+                    <span>React</span>
+                    <span aria-hidden="true">·</span>
+                    <span>PHP</span>
+                    <span aria-hidden="true">·</span>
+                    <span>JavaScript</span>
+                    <span aria-hidden="true">·</span>
+                    <span>MySQL</span>
+                    <span aria-hidden="true">·</span>
+                    <span>WordPress</span>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- ==========================================================
+             SOBRE MÍ
+        =========================================================== -->
+        <section id="sobre" class="section" aria-labelledby="sobre-title">
+            <div class="section-inner about-grid">
+
+                <div class="about-copy">
+                    <p class="section-eyebrow">01 — Sobre mí</p>
+                    <h2 id="sobre-title" class="section-title">De técnico de soporte a desarrolladora Full Stack</h2>
+
                     <p>
-                        Desarrollo de portfolio personal con HTML, CSS y JavaScript, optimizado para SEO y rendimiento.
+                        Empecé en el mundo IT como <strong>técnico informático</strong>, resolviendo incidencias
+                        y dando soporte técnico. Ese contacto directo con problemas reales me llevó a formarme
+                        en <strong>Desarrollo de Aplicaciones Web (DAW)</strong>, tras una base previa en
+                        Sistemas Microinformáticos y Redes, y a construir software en lugar de solo mantenerlo.
                     </p>
 
-                    <div class="tags">
-                        <span>WordPress</span>
-                        <span>PHP</span>
-                        <span>SEO</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROYECTO 2 -->
-            <div class="project-card">
-                <img src="imgs/Tactyra.jpg" alt="Panel de scouting deportivo Tactyra">
-
-                <div class="overlay">
-                    <a href="https://github.com/MariaLopezGuillen/Tactyra1.git" class="overlay-btn">Ver código</a>
-                </div>
-
-                <div class="project-content">
-                    <h3>Tactyra</h3>
                     <p>
-                        Desarrollo web de sistemas para scouting deportivo con Laravel, MySQL y optimización de
-                        rendimiento.
+                        Desde 2023 desarrollo proyectos web completos: sitios corporativos, eCommerce y
+                        aplicaciones a medida, con <strong>Laravel, PHP, React y JavaScript</strong>, gestionando
+                        arquitectura, base de datos, interfaz, rendimiento y SEO técnico de principio a fin.
+                        En 2025 trabajé como desarrolladora web en <strong>Sevilla Systems</strong>, construyendo
+                        una web corporativa en WordPress con funcionalidades a medida y configuración SEO.
                     </p>
 
-                    <div class="tags">
-                        <span>PHP</span>
-                        <span>Laravel</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 3 -->
-            <div class="project-card">
-                <img src="imgs/chronomaster.png" alt="ChronoMaster">
-
-                <div class="overlay">
-                    <a href="https://github.com/MariaLopezGuillen/ChronoMaster.git" class="overlay-btn">Ver código</a>
-                </div>
-
-                <div class="project-content">
-                    <h3>ChronoMaster</h3>
                     <p>
-                        App web de gestión de tareas y tiempo con Laravel, MySQL y React.
+                        Busco unirme a un equipo de desarrollo donde aportar esa base técnica y seguir
+                        creciendo junto a otros perfiles. El código limpio, las buenas prácticas y el
+                        aprendizaje constante son la parte del trabajo que más disfruto.
                     </p>
+                </div>
 
-                    <div class="tags">
-                        <span>PHP</span>
-                        <span>Laravel</span>
-                        <span>MySQL</span>
-                        <span>React</span>
-                    </div>
+                <aside class="about-card" aria-label="Resumen rápido">
+                    <p class="about-card-label">quick-facts.json</p>
+                    <dl class="about-card-list">
+                        <div>
+                            <dt>Formación</dt>
+                            <dd>CFGS Desarrollo de Aplicaciones Web</dd>
+                        </div>
+                        <div>
+                            <dt>Stack principal</dt>
+                            <dd>Laravel · React · PHP · JavaScript</dd>
+                        </div>
+                        <div>
+                            <dt>Ubicación</dt>
+                            <dd>Sevilla, España</dd>
+                        </div>
+                        <div>
+                            <dt>Idiomas</dt>
+                            <dd>Español (nativo) · Inglés (intermedio)</dd>
+                        </div>
+                        <div>
+                            <dt>Buscando</dt>
+                            <dd>Equipo de desarrollo Frontend, Backend o Full Stack</dd>
+                        </div>
+                        <div>
+                            <dt>Fuera del código</dt>
+                            <dd>Entrenadora de fútbol base desde 2025</dd>
+                        </div>
+                    </dl>
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================
+             PROYECTOS DESTACADOS (tarjetas horizontales alternadas)
+        =========================================================== -->
+        <section id="proyectos" class="section section-alt" aria-labelledby="proyectos-title">
+            <div class="section-inner">
+                <p class="section-eyebrow">02 — Proyectos</p>
+                <h2 id="proyectos-title" class="section-title">Del concepto al código</h2>
+                <p class="section-lead">
+                    Proyectos propios, de principio a fin: arquitectura, base de datos, interfaz y despliegue.
+                </p>
+
+                <div class="projects-grid">
+
+                    <!-- Sin Miedo -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/sinmiedo.png" alt="Interfaz de la plataforma Sin Miedo" loading="lazy"
+                                width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-path">~/proyectos/sin-miedo</p>
+                            <h3>Sin Miedo</h3>
+                            <p>
+                                Los centros educativos necesitan canales seguros y anónimos para detectar y frenar
+                                el acoso escolar a tiempo. Sin Miedo es una plataforma construida con Laravel que
+                                permite a los estudiantes denunciar de forma anónima y acceder a un cuestionario
+                                de detección de acoso, todo gestionado desde un panel con roles y permisos.
+                                Desarrollada en colaboración con <a href="https://www.gondo.es/" target="_blank"
+                                    rel="noopener">Gondo Psicología</a>.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Diario privado cifrado para el alumnado</li>
+                                <li>Panel de administración con roles y permisos</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>PHP</li>
+                                <li>Breeze</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://sinmiedo.lovable.app/" target="_blank" rel="noopener">Demo <span
+                                        aria-hidden="true">→</span></a>
+                                <a href="https://github.com/MariaLopezGuillen/SinMiedo-app.git" target="_blank"
+                                    rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Wiki Disney -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/wikidisney.jpg" alt="Interfaz de la aplicación Wiki Disney" loading="lazy"
+                                width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-path">~/proyectos/wiki-disney</p>
+                            <h3>Wiki Disney</h3>
+                            <p>
+                                Consultar el catálogo de películas de Disney de forma rápida y visual, sin depender
+                                de fuentes dispersas. Wiki Disney integra una API externa desde un backend en
+                                Laravel, con una interfaz en React optimizada para rendimiento y experiencia de uso.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Consumo de una API externa desde React</li>
+                                <li>Backend en Laravel para la gestión de datos</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>React</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://wikidisney.vercel.app/" target="_blank" rel="noopener">Demo <span
+                                        aria-hidden="true">→</span></a>
+                                <a href="https://github.com/MariaLopezGuillen/WikiDisney" target="_blank"
+                                    rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tactyra -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/Tactyra.jpg" alt="Panel de scouting deportivo Tactyra" loading="lazy"
+                                width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-path">~/proyectos/tactyra</p>
+                            <h3>Tactyra</h3>
+                            <p>
+                                Los cuerpos técnicos de scouting deportivo necesitan centralizar datos de jugadores
+                                sin depender de hojas de cálculo. Tactyra es un sistema de gestión construido con
+                                Laravel y MySQL, con consultas optimizadas para grandes volúmenes de datos y
+                                desplegado en Render con Docker.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Consultas optimizadas para grandes volúmenes de datos</li>
+                                <li>Despliegue en Render con Docker</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>Docker</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/MariaLopezGuillen/Tactyra1.git" target="_blank"
+                                    rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ChronoMaster -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/chronomaster.png" alt="Interfaz de la aplicación ChronoMaster" loading="lazy"
+                                width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-path">~/proyectos/chronomaster</p>
+                            <h3>ChronoMaster</h3>
+                            <p>
+                                Organizar tareas y controlar el tiempo dedicado a cada una en un mismo lugar.
+                                ChronoMaster es una aplicación de gestión de tareas y tiempo construida con
+                                Laravel, MySQL y React, con una arquitectura pensada para incorporar nuevas
+                                funcionalidades sin fricción.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Seguimiento de tiempo por tarea</li>
+                                <li>Arquitectura preparada para escalar</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>React</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/MariaLopezGuillen/ChronoMaster.git" target="_blank"
+                                    rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/maria.png" alt="Vista previa de este portfolio personal" loading="lazy"
+                                width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <p class="project-path">~/proyectos/portfolio</p>
+                            <h3>Este portfolio</h3>
+                            <p>
+                                Necesitaba un portfolio que cargara rápido, se indexara bien y no dependiera de
+                                librerías innecesarias. Lo construí con HTML, CSS y JavaScript propios, con foco
+                                en SEO técnico, accesibilidad y Core Web Vitals.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Sin frameworks: HTML, CSS y JS propios</li>
+                                <li>Pensado para SEO técnico y rendimiento</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>SEO</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://maria-lg.vercel.app/" target="_blank" rel="noopener">Demo <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-            <!-- PROYECTO 4 -->
-            <div class="project-card">
-                <img src="imgs/wikidisney.jpg" alt="Wiki Disney">
+        </section>
 
-                <div class="overlay">
-                    <a href="https://wikidisney.vercel.app/" class="overlay-btn">Ver sitio web</a>
-                    <a href="https://github.com/MariaLopezGuillen/WikiDisney" class="overlay-btn">Ver código</a>
-                </div>
 
-                <div class="project-content">
-                    <h3>Wiki Disney</h3>
-                    <p>
-                        App para consultar información sobre películas de Disney, con Laravel, MySQL y React, optimizada
-                        para rendimiento y experiencia de usuario.
-                    </p>
+        <!-- ==========================================================
+             WEBS CORPORATIVAS Y ECOMMERCE (tarjetas verticales)
+        =========================================================== -->
+        <section id="proyectos" class="section section-alt" aria-labelledby="proyectos-title">
+            <div class="section-inner">
+                <p class="section-eyebrow">03 — Proyectos Independientes</p>
+                <h2 id="proyectos-title" class="section-title">Webs corporativas y eCommerce</h2>
+                <p class="section-lead">
+                    Proyectos entregados a clientes reales, desde la arquitectura hasta el SEO técnico y el rendimiento.
+                </p>
 
-                    <div class="tags">
-                        <span>PHP</span>
-                        <span>Laravel</span>
-                        <span>MySQL</span>
-                        <span>React</span>
-                    </div>
+                <div class="projects-grid">
+
+                    <!-- Salon de Belleza Quierete -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/quierete.png" alt="Logo de Azahares Flamenca" loading="lazy" width="640"
+                                height="400">
+                        </div>
+                        <div class="project-body">
+                            <h3>Salón de Belleza Quierete</h3>
+                            <p>
+                                Presencia online y visibilidad en buscadores para captar clientela local. Desarrollada
+                                con React y TypeScript, contenido dinámico conectado a Supabase.
+
+                                Contenido dinámico conectado a Supabase
+                                +30% de tráfico orgánico tras optimización SEO
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Contenido dinámico conectado a Supabase</li>
+                                <li>+30% de tráfico orgánico tras optimización SEO</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Lovable</li>
+                                <li>Breeze</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://soloquierete.com/" target="_blank" rel="noopener">Ver web
+                                    <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Wiki Disney -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/figurable.jpg" alt="Logo de Figurable Collectibles" loading="lazy"
+                                width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <h3>Figurable Collectibles</h3>
+                            <p>
+                                eCommerce para coleccionismo con flujo de compra simplificado y pagos integrados.
+                                WordPress, WooCommerce y funcionalidades personalizadas en PHP
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Integración de pagos y flujo de compra simplificado</li>
+                                <li>Checkout responsive y optimizado</li>
+                                <li>Funcionalidades personalizadas en PHP</li>
+                                <li>Integración y configuración de envios</li>
+                                <li>Optimización SEO y Core Web Vitals</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>WordPress</li>
+                                <li>WooCommerce</li>
+                                <li>Elementor</li>
+                                <li>PHP</li>
+                                <li>SEO</li>
+                                <li>Core Web Vitals</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://figurablecollectibles.com/" target="_blank" rel="noopener">Ver Web
+                                    <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tactyra -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/azahares.png" alt="Logo de Azahares Flamenca" loading="lazy" width="640"
+                                height="400">
+                        </div>
+                        <div class="project-body">
+                            <h3>Azahares Flamenca</h3>
+                            <p>
+                                Catálogo online para marca de moda flamenca. WordPress, WooCommerce y Elementor sobre
+                                arquitectura de Custom Post Types.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Arquitectura basada en Custom Post Types</li>
+                                <li>SEO técnico avanzado y carga diferida</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>PHP</li>
+                                <li>WordPress</li>
+                                <li>WooCommerce</li>
+                                <li>Elementor</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://azaharesflamenca.com/" target="_blank" rel="noopener">Ver web <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ChronoMaster -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/donaspublicidad.png" alt="Interfaz de la aplicación ChronoMaster"
+                                loading="lazy" width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <h3>Donas Publicidad</h3>
+                            <p>
+                                Web corporativa orientada a mejorar visibilidad orgánica y tiempos de carga. WordPress y
+                                Elementor con configuración avanzada de SEO técnico.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Configuración avanzada de SEO técnico</li>
+                                <li>Mejora medible de Core Web Vitals</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>PHP</li>
+                                <li>Laravel</li>
+                                <li>MySQL</li>
+                                <li>React</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/MariaLopezGuillen/ChronoMaster.git" target="_blank"
+                                    rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Portfolio -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="imgs/enjoy-it.png" alt="Logo de Enjoy It" loading="lazy" width="640" height="400">
+                        </div>
+                        <div class="project-body">
+                            <h3>Enjoy It</h3>
+                            <p>
+                                Un local de eventos y celebraciones necesitaba mostrar sus instalaciones
+                                y facilitar el proceso de reserva online. Desarrollé su web corporativa en
+                                WordPress con galería de instalaciones, tarifas por días de la semana y
+                                toda la información de reservas y políticas.
+                            </p>
+                            <ul class="project-highlights">
+                                <li>Galería de instalaciones con diseño visual atractivo</li>
+                                <li>Sección de tarifas dinámicas según día de la semana</li>
+                                <li>Información estructurada de reservas, fianza y política de cancelación</li>
+                            </ul>
+                            <ul class="tags">
+                                <li>WordPress</li>
+                                <li>Elementor</li>
+                                <li>SEO Local</li>
+                                <li>Galería</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://enjoy-it.es/" target="_blank" rel="noopener">Demo <span
+                                        aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-            <!-- PROYECTO 5-->
+        </section>
 
-            <div class="project-card">
-                <img src="imgs/sinmiedo.png" alt="Sin Miedo">
 
-                <div class="overlay">
-                    <a href="https://sinmiedo.lovable.app/" class="overlay-btn">Ver sitio web</a>
-                    <a href="https://github.com/MariaLopezGuillen/SinMiedo-app.git" class="overlay-btn">Ver código</a>
-                </div>
+        <!-- ==========================================================
+             TECNOLOGÍAS
+        =========================================================== -->
+        <section id="tecnologias" class="section section-alt" aria-labelledby="tecnologias-title">
+            <div class="section-inner">
+                <p class="section-eyebrow">04 — Stack</p>
+                <h2 id="tecnologias-title" class="section-title">Tecnologías</h2>
 
-                <div class="project-content">
-                    <h3>Sin Miedo</h3>
-                    <p>
-                        Plataforma web desarrollada con Laravel para la denuncia anónima de casos de acoso escolar,
-                        creada en colaboración con <a style="color: #bbe3eb;" href="https://www.gondo.es/"
-                            target="_blank">Gondo
-                            Psicología</a> y enfocada en la privacidad, seguridad y apoyo a
-                        menores. </p>
+                <div class="skills-grid">
 
-                    <div class="tags">
-                        <span>Laravel</span>
-                        <span>MySQL</span>
-                        <span>PHP</span>
-                        <span>Optimización</span>
-                        <span>Breeze</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="proyectos-web" class="section dark">
-        <h2 style="text-align: center;">Webs corporativas y ecommerce</h2>
-        <br />
-        <div class="projects">
-            <!-- PROYECTO 4 -->
-            <div class="project-card">
-                <img src="imgs/figurable.jpg" alt="Figurable Collectibles">
-
-                <div class="overlay">
-                    <a href="https://www.figurable.eu/" class="overlay-btn">Ver sitio web</a>
-                </div>
-
-                <div class="project-content">
-                    <h3>Figurable Collectibles</h3>
-                    <p>
-                        Desarrollo de eCommerce con WordPress y WooCommerce, incluyendo integración de pagos, creación
-                        de
-                        funcionalidades personalizadas en PHP y optimización de rendimiento. Mejora de la arquitectura
-                        semántica, tiempos de carga y experiencia de usuario mediante diseño responsive y flujos de
-                        compra
-                        simplificados.
-                    </p>
-
-                    <div class="tags">
-                        <span>WordPress</span>
-                        <span>WooCommerce</span>
-                        <span>PHP</span>
-                        <span>Core Web Vitals</span>
+                    <div class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                            <li>jQuery / Ajax</li>
+                        </ul>
                     </div>
 
-                </div>
-            </div>
+                    <div class="skill-card">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Node.js</li>
+                            <li>Java</li>
+                            <li>Spring / Spring Boot</li>
+                        </ul>
+                    </div>
 
-            <!-- PROYECTO 5 -->
-            <div class="project-card">
-                <img src="imgs/donaspublicidad.png" alt="Donas Publicidad">
+                    <div class="skill-card">
+                        <h3>Bases de datos</h3>
+                        <ul>
+                            <li>SQL</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
 
-                <div class="overlay">
-                    <a href="https://donaspublicidad.com/" class="overlay-btn">Ver sitio web</a>
-                </div>
+                    <div class="skill-card">
+                        <h3>CMS y eCommerce</h3>
+                        <ul>
+                            <li>WordPress</li>
+                            <li>WooCommerce</li>
+                            <li>Elementor</li>
+                        </ul>
+                    </div>
 
-                <div class="project-content">
-                    <h3>Donas Publicidad</h3>
-                    <p>
-                        Desarrollo de sitio web corporativo con WordPress y Elementor, aplicando optimización de
-                        consultas,
-                        mejora de tiempos de carga, configuración avanzada de SEO técnico y optimización de Core Web
-                        Vitals.
-                        Implementación de diseño responsive, estructura semántica y mejoras de rendimiento que
-                        incrementaron
-                        la visibilidad y el tráfico orgánico.
-                    </p>
-
-                    <div class="tags">
-                        <span>WordPress</span>
-                        <span>Elementor</span>
-                        <span>Core Web Vitals</span>
-                        <span>SEO Técnico</span>
+                    <div class="skill-card">
+                        <h3>Entorno y herramientas</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>Docker</li>
+                            <li>Figma</li>
+                            <li>cPanel / FileZilla</li>
+                        </ul>
                     </div>
 
                 </div>
             </div>
+        </section>
 
-            <!-- PROYECTO 6 -->
-            <div class="project-card">
-                <img src="imgs/azahares.png" alt="Azahares">
 
-                <div class="overlay">
-                    <a href="https://azaharesflamenca.com/" class="overlay-btn">Ver sitio web</a>
-                </div>
+        <!-- ==========================================================
+             TRAYECTORIA: FORMACIÓN + EXPERIENCIA
+        =========================================================== -->
+        <section id="trayectoria" class="section" aria-labelledby="trayectoria-title">
+            <div class="section-inner">
+                <p class="section-eyebrow">05 — Trayectoria</p>
+                <h2 id="trayectoria-title" class="section-title">Formación y experiencia</h2>
 
-                <div class="project-content">
-                    <h3>Azahares Flamenca</h3>
-                    <p>
-                        Desarrollo de sitio web corporativo con WordPress, WooCommerce y Elementor, aplicando
-                        arquitectura basada en Custom Post Types, optimización de consultas, mejora de Core Web Vitals
-                        y configuración avanzada de SEO técnico. Implementación de diseño responsive y optimización
-                        de rendimiento mediante minificación, compresión y carga diferida de recursos.
-                    </p>
+                <div class="trajectory-grid">
 
-                    <div class="tags">
-                        <span>WordPress</span>
-                        <span>WooCommerce</span>
-                        <span>Elementor</span>
-                        <span>Core Web Vitals</span>
-                        <span>SEO Técnico</span>
+                    <div class="trajectory-column">
+                        <h3 class="trajectory-heading">Formación académica</h3>
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2023 — 2025</p>
+                                <p class="timeline-title">CFGS Desarrollo de Aplicaciones Web</p>
+                            </li>
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2020 — 2022</p>
+                                <p class="timeline-title">CFGM Sistemas Microinformáticos y Redes</p>
+                            </li>
+                        </ul>
+
+                        <h3 class="trajectory-heading trajectory-heading--spaced">Formación complementaria</h3>
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2026</p>
+                                <p class="timeline-title">Procesamiento de datos con Java</p>
+                                <p class="timeline-detail">Ficheros XML, conectores a base de datos, mapeo
+                                    objeto-relacional — 210&nbsp;horas</p>
+                            </li>
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2026</p>
+                                <p class="timeline-title">Business Intelligence con Inteligencia Artificial</p>
+                                <p class="timeline-detail">30&nbsp;horas</p>
+                            </li>
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2024</p>
+                                <p class="timeline-title">Frameworks: Angular, React, Ajax, jQuery 4</p>
+                                <p class="timeline-detail">eFundae — 36&nbsp;horas</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="trajectory-column">
+                        <h3 class="trajectory-heading">Experiencia</h3>
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2023 — Actualidad</p>
+                                <p class="timeline-title">Proyectos independientes</p>
+                                <ul class="timeline-bullets">
+                                    <li>Desarrollo de sitios web corporativos y eCommerce</li>
+                                    <li>Implementación de reservas y pagos online</li>
+                                    <li>Optimización del rendimiento y gestión completa del desarrollo</li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <p class="timeline-dates">2025</p>
+                                <p class="timeline-title">Desarrolladora Web — Sevilla Systems</p>
+                                <ul class="timeline-bullets">
+                                    <li>Desarrollo de web corporativa en WordPress</li>
+                                    <li>Funcionalidades personalizadas y mejora del rendimiento</li>
+                                    <li>Configuración SEO</li>
+                                </ul>
+                            </li>
+                            <li class="timeline-item">
+                                <p class="timeline-dates">Marzo — Octubre 2022</p>
+                                <p class="timeline-title">Técnico Informático</p>
+                                <ul class="timeline-bullets">
+                                    <li>Resolución de incidencias técnicas y apoyo en desarrollo web</li>
+                                    <li>Base de diagnóstico y atención al detalle aplicada después al desarrollo</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
             </div>
-            <!-- PROYECTO 7 -->
-            <div class="project-card">
-                <img src="imgs/quierete.png" alt="Quierete ">
+        </section>
 
-                <div class="overlay">
-                    <a href="https://soloquierete.com/" class="overlay-btn">Ver sitio web</a>
-                </div>
 
-                <div class="project-content">
-                    <h3>Salon de Belleza Quierete</h3>
-                    <p>
-                        Desarrollo de sitio web corporativo para una peluquería, creado con Lovable, React y TypeScript.
-                        Implementación de una arquitectura moderna, optimización del rendimiento y diseño centrado en la
-                        experiencia del usuario. Integración de contenido dinámico y mejoras SEO que contribuyeron a un
-                        aumento del 30% en el tráfico orgánico.
-                    </p>
+        <!-- ==========================================================
+             CONTACTO
+        =========================================================== -->
+        <section id="contacto" class="section contact-section" aria-labelledby="contacto-title">
+            <div class="section-inner contact-inner">
+                <p class="section-eyebrow">06 — Contacto</p>
+                <h2 id="contacto-title" class="section-title">Hablemos de tu equipo</h2>
+                <p class="section-lead">
+                    Busco incorporarme a un equipo de desarrollo. Si tienes una oportunidad,
+                    estaré encantada de hablar contigo.
+                </p>
 
-                    <div class="tags">
-                        <span>React</span>
-                        <span>TypeScript</span>
-                        <span>Lovable</span>
-                        <span>SPA</span>
-                        <span>Performance</span>
-                        <span>SEO Técnico</span>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- Habilidades y Tecnologías -->
-    <section id="habilidades" class="habilidades">
-        <h2>Habilidades y Tecnologías</h2>
-
-        <div class="habilidades-grid">
-
-            <div class="habilidad-categoria">
-                <h3><strong>Frontend</strong></h3>
-                <ul>
-                    <li><strong>HTML5</strong></li>
-                    <li><strong>CSS3</strong></li>
-                    <li><strong>JavaScript</strong></li>
-                    <li><strong>React</strong></li>
-                    <li><strong>Angular</strong></li>
-                    <li>Bootstrap</li>
+                <ul class="contact-social">
+                    <li>
+                        <a href="https://github.com/MariaLopezGuillen" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mar%C3%ADa-m-l%C3%B3pez-guill%C3%A9n-7a3529258/"
+                            target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:marialgwork@gmail.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            marialgwork@gmail.com
+                        </a>
+                    </li>
                 </ul>
             </div>
+        </section>
 
-            <div class="habilidad-categoria">
-                <h3><strong>Backend</strong></h3>
-                <ul>
-                    <li><strong>PHP</strong></li>
-                    <li><strong>Laravel</strong></li>
-                    <li><strong>Node.js</strong></li>
-                    <li><strong>Java</strong></li>
-                    <li><strong>Spring Boot</strong></li>
-                </ul>
-            </div>
+    </main>
 
-            <div class="habilidad-categoria">
-                <h3><strong>Bases de datos</strong></h3>
-                <ul>
-                    <li><strong>SQL</strong></li>
-                    <li><strong>MySQL</strong></li>
-                </ul>
-            </div>
-
-            <div class="habilidad-categoria">
-                <h3><strong>CMS y eCommerce</strong></h3>
-                <ul>
-                    <li><strong>WordPress</strong></li>
-                    <li><strong>WooCommerce</strong></li>
-                </ul>
-            </div>
-
-            <div class="habilidad-categoria">
-                <h3><strong>Herramientas</strong></h3>
-                <ul>
-                    <li>Git / GitHub</li>
-                    <li>Docker</li>
-                    <li>cPanel</li>
-                    <li>FileZilla</li>
-                    <li>Figma</li>
-                    <li>Canva</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-
-    <br>
-    <!-- CONTACTO -->
-    <section id="contacto" class="contact-full">
-        <div class="contact-container">
-            <h2>CONTACTAME</h2>
-            <p>Busco incorporarme a un equipo tecnológico. Si tienes una oportunidad, estaré encantada de hablar
-                contigo.</p>
-
-            <div class="contact-social">
-
-                <!-- GitHub -->
-                <a href="https://github.com/MariaLopezGuillen" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-                    </svg>
-                    GitHub
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/mar%C3%ADa-m-l%C3%B3pez-guill%C3%A9n-7a3529258" target="_blank"
-                    rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                    </svg>
-                    LinkedIn
-                </a>
-
-                <!-- Email -->
-                <a href="mailto:marialgwork@gmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect width="20" height="16" x="2" y="4" rx="2" />
-                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    marialgwork@gmail.com
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer-full">
-        <p class="footer-copy">© 2026 María López Guillén</p>
+    <footer class="footer">
+        <p>© <span id="year">2026</span> María López Guillén</p>
     </footer>
 
 </body>
