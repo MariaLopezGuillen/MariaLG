@@ -744,7 +744,7 @@ h1, h2, h3, h4 {
 }
 
 .project-body {
-  padding: var(--space-6) var(--space-7) var(--space-7);
+  padding: var(--space-6) var(--space-8) var(--space-8);
 }
 
 .project-path {
@@ -988,20 +988,18 @@ h1, h2, h3, h4 {
 ------------------------------------------------------------- */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: var(--space-5);
   margin-top: var(--space-10);
 }
 
-@media (max-width: 900px) {
-  .cert-grid { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 600px) {
   .cert-grid { grid-template-columns: 1fr; }
 }
 
 .cert-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -1010,20 +1008,23 @@ h1, h2, h3, h4 {
   color: inherit;
   transition: border-color var(--duration-fast) var(--ease),
               transform var(--duration-fast) var(--ease),
-              box-shadow var(--duration-fast) var(--ease);
+              box-shadow var(--duration-fast) var(--ease),
+              background var(--duration-fast) var(--ease);
 }
 
 .cert-card:hover {
   border-color: var(--accent-line);
+  background: var(--bg-elevated-2);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
 .cert-card-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: var(--space-3);
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 .cert-source {
@@ -1032,40 +1033,90 @@ h1, h2, h3, h4 {
   gap: var(--space-2);
   font-size: var(--text-xs);
   color: var(--text-tertiary);
+  flex-wrap: wrap;
 }
 
 .cert-icon {
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   border-radius: var(--radius-sm);
   background: var(--accent-dim);
-  font-size: 0.85rem;
+  border: 1px solid var(--accent-line);
+  color: var(--accent-bright);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.cert-source-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cert-source-name {
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .cert-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   color: var(--text-tertiary);
 }
 
 .cert-link-icon {
-  color: var(--accent-bright);
+  flex-shrink: 0;
+  color: var(--text-tertiary);
   font-size: var(--text-sm);
+  transition: color var(--duration-fast) var(--ease),
+              transform var(--duration-fast) var(--ease);
+}
+
+.cert-card:hover .cert-link-icon {
+  color: var(--accent-bright);
+  transform: translate(2px, -2px);
 }
 
 .cert-title {
   font-size: var(--text-base);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-primary);
   margin: 0 0 var(--space-2);
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .cert-detail {
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
   margin: 0;
+}
+
+.cert-id {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-top: auto;
+  padding-top: var(--space-3);
+}
+
+.cert-id-label {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--bg-elevated-2);
+  border: 1px solid var(--border);
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
 /* Utilidades adicionales para secciones de formación */
@@ -1073,7 +1124,26 @@ h1, h2, h3, h4 {
   color: var(--text-secondary);
   font-size: var(--text-base);
   max-width: 56ch;
+  margin-bottom: var(--space-5);
+}
+
+.cert-hours-total {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--accent-bright);
+  border: 1px solid var(--accent-line);
+  background: var(--accent-dim);
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-full);
   margin-bottom: var(--space-8);
+}
+
+.cert-hours-total strong {
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 .highlight {
