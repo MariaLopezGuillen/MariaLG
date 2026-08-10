@@ -50,11 +50,11 @@
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#sobre" data-nav-link>Sobre mí</a></li>
                     <li><a href="#proyectos" data-nav-link>Proyectos</a></li>
-                    <li><a href="#proyectos-independientes" data-nav-link>Proyectos Independientes</a></li>
                     <li><a href="#tecnologias" data-nav-link>Stack</a></li>
                     <li><a href="#formacion-academica" data-nav-link>Formación</a></li>
                     <li><a href="#certificaciones" data-nav-link>Certificaciones</a></li>
                     <li><a href="#experiencia" data-nav-link>Trayectoria</a></li>
+                    <li><a href="#faq" data-nav-link>FAQ</a></li>
                     <li><a href="#contacto" class="nav-cta" data-nav-link>Contactar</a></li>
                 </ul>
             </nav>
@@ -210,19 +210,25 @@
                 <p class="section-eyebrow">02 — Proyectos</p>
                 <h2 id="proyectos-title" class="section-title">Del concepto al código</h2>
                 <p class="section-lead">
-                    Proyectos propios, de principio a fin: arquitectura, base de datos, interfaz y despliegue.
+                    Proyectos propios y trabajo entregado a clientes reales: arquitectura, base de datos,
+                    interfaz, SEO técnico y despliegue de principio a fin.
                 </p>
 
-                <div class="projects-grid">
+                <div class="project-filters" role="group" aria-label="Filtrar proyectos por tipo">
+                    <button type="button" class="project-filter is-active" data-filter="todos">Todos</button>
+                    <button type="button" class="project-filter" data-filter="propio">Proyectos propios</button>
+                    <button type="button" class="project-filter" data-filter="cliente">Clientes</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
 
                     <!-- Sin Miedo -->
-                    <article class="project-card">
+                    <article class="project-card" data-category="propio">
                         <div class="project-media">
                             <img src="imgs/sinmiedo.png" alt="Interfaz de la plataforma Sin Miedo" loading="lazy"
                                 width="640" height="400">
                         </div>
                         <div class="project-body">
-                            <p class="project-path">~/proyectos/sin-miedo</p>
                             <h3>Sin Miedo</h3>
                             <p>
                                 Los centros educativos necesitan canales seguros y anónimos para detectar y frenar
@@ -254,13 +260,12 @@
                     </article>
 
                     <!-- Wiki Disney -->
-                    <article class="project-card">
+                    <article class="project-card" data-category="propio">
                         <div class="project-media">
                             <img src="imgs/wikidisney.jpg" alt="Interfaz de la aplicación Wiki Disney" loading="lazy"
                                 width="640" height="400">
                         </div>
                         <div class="project-body">
-                            <p class="project-path">~/proyectos/wiki-disney</p>
                             <h3>Wiki Disney</h3>
                             <p>
                                 Consultar el catálogo de películas de Disney de forma rápida y visual, sin depender
@@ -288,13 +293,12 @@
                     </article>
 
                     <!-- Tactyra -->
-                    <article class="project-card">
+                    <article class="project-card" data-category="propio">
                         <div class="project-media">
                             <img src="imgs/Tactyra.jpg" alt="Panel de scouting deportivo Tactyra" loading="lazy"
                                 width="640" height="400">
                         </div>
                         <div class="project-body">
-                            <p class="project-path">~/proyectos/tactyra</p>
                             <h3>Tactyra</h3>
                             <p>
                                 Los cuerpos técnicos de scouting deportivo necesitan centralizar datos de jugadores
@@ -322,13 +326,12 @@
                     </article>
 
                     <!-- ChronoMaster -->
-                    <article class="project-card">
+                    <article class="project-card" data-category="propio">
                         <div class="project-media">
                             <img src="imgs/chronomaster.png" alt="Interfaz de la aplicación ChronoMaster" loading="lazy"
                                 width="640" height="400">
                         </div>
                         <div class="project-body">
-                            <p class="project-path">~/proyectos/chronomaster</p>
                             <h3>ChronoMaster</h3>
                             <p>
                                 Organizar tareas y controlar el tiempo dedicado a cada una en un mismo lugar.
@@ -355,23 +358,8 @@
                         </div>
                     </article>
 
-                </div>
-            </div>
-        </section>
-
-<!-- PROYECTOS CORPORATIVOS Y ECOMMERCE -->
-        <section id="proyectos-independientes" class="section section-alt" aria-labelledby="proyectos-independientes-title">
-            <div class="section-inner">
-                <p class="section-eyebrow">03 — Proyectos Independientes</p>
-                <h2 id="proyectos-independientes-title" class="section-title">Webs corporativas y eCommerce</h2>
-                <p class="section-lead">
-                    Proyectos entregados a clientes reales, desde la arquitectura hasta el SEO técnico y el rendimiento.
-                </p>
-
-                <div class="projects-grid">
-
                     <!-- Salon de Belleza Quierete -->
-                    <article class="project-card">
+                    <article class="project-card" data-category="cliente">
                         <div class="project-media">
                             <img src="imgs/quierete.png" alt="Logo de Azahares Flamenca" loading="lazy" width="640"
                                 height="400">
@@ -381,9 +369,6 @@
                             <p>
                                 Presencia online y visibilidad en buscadores para captar clientela local. Desarrollada
                                 con React y TypeScript, contenido dinámico conectado a Supabase.
-
-                                Contenido dinámico conectado a Supabase
-                                +30% de tráfico orgánico tras optimización SEO
                             </p>
                             <ul class="project-highlights">
                                 <li>Contenido dinámico conectado a Supabase</li>
@@ -403,8 +388,8 @@
                         </div>
                     </article>
 
-                    <!-- Wiki Disney -->
-                    <article class="project-card">
+                    <!-- Figurable Collectibles -->
+                    <article class="project-card" data-category="cliente">
                         <div class="project-media">
                             <img src="imgs/figurable.jpg" alt="Logo de Figurable Collectibles" loading="lazy"
                                 width="640" height="400">
@@ -439,8 +424,8 @@
                         </div>
                     </article>
 
-                    <!-- Tactyra -->
-                    <article class="project-card">
+                    <!-- Azahares Flamenca -->
+                    <article class="project-card" data-category="cliente">
                         <div class="project-media">
                             <img src="imgs/azahares.png" alt="Logo de Azahares Flamenca" loading="lazy" width="640"
                                 height="400">
@@ -470,10 +455,10 @@
                         </div>
                     </article>
 
-                    <!-- ChronoMaster -->
-                    <article class="project-card">
+                    <!-- Donas Publicidad -->
+                    <article class="project-card" data-category="cliente">
                         <div class="project-media">
-                            <img src="imgs/donaspublicidad.png" alt="Interfaz de la aplicación ChronoMaster"
+                            <img src="imgs/donaspublicidad.png" alt="Web corporativa de Donas Publicidad"
                                 loading="lazy" width="640" height="400">
                         </div>
                         <div class="project-body">
@@ -488,21 +473,21 @@
                             </ul>
                             <ul class="tags">
                                 <li>PHP</li>
-                                <li>Laravel</li>
-                                <li>MySQL</li>
-                                <li>React</li>
+                                <li>WordPress</li>
+                                <li>Elementor</li>
+                                <li>SEO</li>
                                 <li>Testing</li>
 
                             </ul>
                             <div class="project-links">
-                                <a href="https://github.com/MariaLopezGuillen/ChronoMaster.git" target="_blank"
-                                    rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+                                <a href="https://donaspublicidad.com/" target="_blank"
+                                    rel="noopener">Ver web <span aria-hidden="true">→</span></a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Portfolio -->
-                    <article class="project-card">
+                    <!-- Enjoy It -->
+                    <article class="project-card" data-category="cliente">
                         <div class="project-media">
                             <img src="imgs/enjoy-it.png" alt="Logo de Enjoy It" loading="lazy" width="640" height="400">
                         </div>
@@ -534,6 +519,10 @@
                     </article>
 
                 </div>
+
+                <p class="project-filter-empty" id="project-filter-empty" hidden>
+                    No hay proyectos en esta categoría todavía.
+                </p>
             </div>
         </section>
 
@@ -541,7 +530,7 @@
 <!-- HABILIDADES TECNOLOGICAS -->
         <section id="tecnologias" class="section section-alt" aria-labelledby="tecnologias-title">
             <div class="section-inner">
-                <p class="section-eyebrow">04 — Stack</p>
+                <p class="section-eyebrow">03 — Stack</p>
                 <h2 id="tecnologias-title" class="section-title">Tecnologías</h2>
 
                 <div class="skills-grid">
@@ -605,7 +594,7 @@
 <!-- ============ FORMACIÓN ACADÉMICA ============ -->
 <section id="formacion-academica" class="section" aria-labelledby="formacion-academica-title">
     <div class="section-inner">
-        <p class="section-eyebrow">05 — Formación</p>
+        <p class="section-eyebrow">04 — Formación</p>
         <h2 id="formacion-academica-title" class="section-title">Formación académica</h2>
 
         <ul class="timeline">
@@ -625,7 +614,7 @@
 <!-- ============ FORMACIÓN COMPLEMENTARIA (grid tipo certificaciones) ============ -->
 <section id="certificaciones" class="section" aria-labelledby="certificaciones-title">
     <div class="section-inner">
-        <p class="section-eyebrow">06 — Certificaciones</p>
+        <p class="section-eyebrow">05 — Certificaciones</p>
         <h2 id="certificaciones-title" class="section-title">
             Aprendizaje validado,<br><span class="highlight">crecimiento continuo</span>
         </h2>
@@ -710,7 +699,7 @@
 <!-- ============ EXPERIENCIA ============ -->
 <section id="experiencia" class="section" aria-labelledby="experiencia-title">
     <div class="section-inner">
-        <p class="section-eyebrow">07 — Trayectoria</p>
+        <p class="section-eyebrow">06 — Trayectoria</p>
         <h2 id="experiencia-title" class="section-title">Experiencia</h2>
 
         <ul class="timeline">
@@ -741,6 +730,93 @@
                 </ul>
             </li>
         </ul>
+    </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="section faq-section" aria-labelledby="faq-title">
+    <div class="section-inner">
+        <p class="section-eyebrow">07 — Preguntas frecuentes</p>
+        <h2 id="faq-title" class="section-title">
+            Preguntas <span class="highlight">Frecuentes</span>
+        </h2>
+        <p class="section-subtitle">
+            Respuestas rápidas a las consultas más habituales sobre mi perfil, disponibilidad y forma de trabajar.
+        </p>
+
+        <div class="faq-list">
+
+            <details class="faq-item" open>
+                <summary class="faq-question">
+                    <span class="faq-question-left">
+                        <span class="faq-icon" aria-hidden="true">?</span>
+                        ¿Estás disponible para modalidades de trabajo remoto o presencial?
+                    </span>
+                    <span class="faq-chevron" aria-hidden="true">⌄</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Sí, estoy disponible para trabajar en modalidad remota, presencial o híbrida.
+                        Resido en Sevilla, con flexibilidad geográfica para incorporarme a un equipo
+                        de desarrollo.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="faq-question-left">
+                        <span class="faq-icon" aria-hidden="true">?</span>
+                        ¿En qué stack o tecnologías principales te especializas?
+                    </span>
+                    <span class="faq-chevron" aria-hidden="true">⌄</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Mi stack principal es Laravel, PHP, React y JavaScript/TypeScript con MySQL,
+                        además de experiencia en WordPress y WooCommerce. También trabajo con Supabase
+                        y Docker en proyectos que lo requieren.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="faq-question-left">
+                        <span class="faq-icon" aria-hidden="true">?</span>
+                        ¿Cuál es tu formación académica y trayectoria?
+                    </span>
+                    <span class="faq-chevron" aria-hidden="true">⌄</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Soy graduada en el CFGS de Desarrollo de Aplicaciones Web, con base previa en
+                        Sistemas Microinformáticos y Redes. Desde 2023 desarrollo proyectos web completos
+                        por cuenta propia, y en 2025 trabajé como desarrolladora en Sevilla Systems.
+                        Sigo formándome de forma continua con cursos complementarios.
+                    </p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span class="faq-question-left">
+                        <span class="faq-icon" aria-hidden="true">?</span>
+                        ¿Cómo podemos ponernos en contacto para una propuesta laboral?
+                    </span>
+                    <span class="faq-chevron" aria-hidden="true">⌄</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>
+                        Puedes escribirme directamente a
+                        <a href="mailto:marialgwork@gmail.com">marialgwork@gmail.com</a>,
+                        contactarme por <a href="https://www.linkedin.com/in/mar%C3%ADa-m-l%C3%B3pez-guill%C3%A9n-7a3529258/" target="_blank" rel="noopener">LinkedIn</a>,
+                        o usar el <a href="#contacto">formulario de contacto</a> de esta misma página.
+                    </p>
+                </div>
+            </details>
+
+        </div>
     </div>
 </section>
 

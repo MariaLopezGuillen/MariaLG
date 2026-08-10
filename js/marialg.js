@@ -124,52 +124,39 @@
   }
 
   /* -----------------------------------------------------------
-     5. AÑO DINÁMICO EN EL FOOTER
+     6. FILTRO DE PROYECTOS (Todos / Propios / Clientes)
+  ----------------------------------------------------------- */
+  const filterButtons = document.querySelectorAll('.project-filter');
+  const projectCards = document.querySelectorAll('#projects-grid .project-card');
+  const emptyMessage = document.getElementById('project-filter-empty');
+
+  if (filterButtons.length && projectCards.length) {
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        filterButtons.forEach((btn) => btn.classList.remove('is-active'));
+        button.classList.add('is-active');
+
+        let visibleCount = 0;
+        projectCards.forEach((card) => {
+          const matches = filter === 'todos' || card.getAttribute('data-category') === filter;
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        if (emptyMessage) {
+          emptyMessage.hidden = visibleCount !== 0;
+        }
+      });
+    });
+  }
+
+  /* -----------------------------------------------------------
+     7. AÑO DINÁMICO EN EL FOOTER
   ----------------------------------------------------------- */
   const yearEl = document.getElementById('year');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 })();
-
-/* Espera a que todo esté listo */
-document.addEventListener('DOMContentLoaded', () => {
-    
-    // Verifica que emailjs esté disponible
-    if (typeof emailjs === 'undefined') {
-        console.error('EmailJS no se ha cargado. Revisa el orden de los scripts.');
-        return;
-    }
-
-    emailjs.init('C0HBIQVawbQ9d_B2w');
-
-    const contactForm = document.getElementById('contact-form');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const submitBtn = contactForm.querySelector('.contact-form-submit');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<span aria-hidden="true">▶</span> Transmitiendo...';
-            submitBtn.disabled = true;
-
-            emailjs.sendForm('service_bs4bimu', 'template_9q335qh', contactForm)
-                .then((response) => {
-                    console.log('EmailJS OK:', response.status, response.text);
-                    submitBtn.innerHTML = '<span aria-hidden="true">✓</span> Mensaje enviado';
-                    contactForm.reset();
-                })
-                .catch((error) => {
-                    console.error('EmailJS ERROR:', error);
-                    submitBtn.innerHTML = '<span aria-hidden="true">✕</span> Error: ' + (error.text || 'revisa consola');
-                })
-                .finally(() => {
-                    setTimeout(() => {
-                        submitBtn.innerHTML = originalText;
-                        submitBtn.disabled = false;
-                    }, 3000);
-                });
-        });
-    }
-});
