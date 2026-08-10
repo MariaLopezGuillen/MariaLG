@@ -1156,49 +1156,153 @@ h1, h2, h3, h4 {
 /* -------------------------------------------------------------
    11. CONTACTO
 ------------------------------------------------------------- */
-.contact-section {
-  text-align: center;
-}
-
-.contact-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--space-16);
+  align-items: start;
 }
 
 .contact-section .section-lead {
-  margin-inline: auto;
+  margin-bottom: var(--space-8);
 }
 
+/* --- Enlaces sociales --- */
 .contact-social {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-4);
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
 }
 
-.contact-social a {
+.contact-social-link {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--text-secondary);
-  padding: 0.85rem 1.5rem;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--border-strong);
-  transition: all var(--duration-fast) var(--ease);
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
 }
 
-.contact-social a:hover {
+.contact-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
   color: var(--accent-bright);
+  transition: border-color var(--duration-fast) var(--ease),
+              background var(--duration-fast) var(--ease),
+              transform var(--duration-fast) var(--ease);
+}
+
+.contact-social-link:hover .contact-social-icon {
   border-color: var(--accent-line);
   background: var(--accent-dim);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
-.contact-social svg {
-  flex-shrink: 0;
+.contact-social-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-social-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.contact-social-value {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* --- Formulario --- */
+.contact-form {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-form-field label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem var(--space-4);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  resize: none;
+  transition: border-color var(--duration-fast) var(--ease),
+              box-shadow var(--duration-fast) var(--ease);
+}
+
+.contact-form-field input::placeholder,
+.contact-form-field textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.contact-form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.95rem var(--space-6);
+  background: var(--accent-dim);
+  border: 1px solid var(--accent-line);
+  border-radius: var(--radius-sm);
+  color: var(--accent-bright);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background var(--duration-fast) var(--ease),
+              box-shadow var(--duration-fast) var(--ease),
+              transform var(--duration-fast) var(--ease);
+}
+
+.contact-form-submit:hover {
+  background: var(--accent-dim-strong);
+  box-shadow: var(--shadow-accent);
+  transform: translateY(-2px);
+}
+
+.contact-form-submit-icon {
+  font-size: var(--text-xs);
 }
 
 /* -------------------------------------------------------------
@@ -1258,6 +1362,11 @@ h1, h2, h3, h4 {
   .trajectory-grid {
     grid-template-columns: 1fr;
     gap: var(--space-12);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
   }
 }
 

@@ -131,3 +131,34 @@
     yearEl.textContent = new Date().getFullYear();
   }
 })();
+
+// Inicializa EmailJS con tu Public Key
+emailjs.init('C0HBIQVawbQ9d_B2w');
+
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector('.contact-form-submit');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span aria-hidden="true">▶</span> Transmitiendo...';
+        submitBtn.disabled = true;
+
+        emailjs.sendForm('service_bs4bimu', 'template_x2rng68', contactForm)
+            .then(() => {
+                submitBtn.innerHTML = '<span aria-hidden="true">✓</span> Mensaje enviado';
+                contactForm.reset();
+            })
+            .catch(() => {
+                submitBtn.innerHTML = '<span aria-hidden="true">✕</span> Error, inténtalo de nuevo';
+            })
+            .finally(() => {
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 3000);
+            });
+    });
+}
