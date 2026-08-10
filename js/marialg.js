@@ -132,33 +132,44 @@
   }
 })();
 
-// Inicializa EmailJS con tu Public Key
-emailjs.init('C0HBIQVawbQ9d_B2w');
+/* Espera a que todo esté listo */
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Verifica que emailjs esté disponible
+    if (typeof emailjs === 'undefined') {
+        console.error('EmailJS no se ha cargado. Revisa el orden de los scripts.');
+        return;
+    }
 
-const contactForm = document.getElementById('contact-form');
+    emailjs.init('C0HBIQVawbQ9d_B2w');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
+    const contactForm = document.getElementById('contact-form');
 
-        const submitBtn = contactForm.querySelector('.contact-form-submit');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<span aria-hidden="true">▶</span> Transmitiendo...';
-        submitBtn.disabled = true;
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
 
-        emailjs.sendForm('service_bs4bimu', 'template_x2rng68', contactForm)
-            .then(() => {
-                submitBtn.innerHTML = '<span aria-hidden="true">✓</span> Mensaje enviado';
-                contactForm.reset();
-            })
-            .catch(() => {
-                submitBtn.innerHTML = '<span aria-hidden="true">✕</span> Error, inténtalo de nuevo';
-            })
-            .finally(() => {
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                }, 3000);
-            });
-    });
-}
+            const submitBtn = contactForm.querySelector('.contact-form-submit');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span aria-hidden="true">▶</span> Transmitiendo...';
+            submitBtn.disabled = true;
+
+            emailjs.sendForm('service_bs4bimu', 'template_9q335qh', contactForm)
+                .then((response) => {
+                    console.log('EmailJS OK:', response.status, response.text);
+                    submitBtn.innerHTML = '<span aria-hidden="true">✓</span> Mensaje enviado';
+                    contactForm.reset();
+                })
+                .catch((error) => {
+                    console.error('EmailJS ERROR:', error);
+                    submitBtn.innerHTML = '<span aria-hidden="true">✕</span> Error: ' + (error.text || 'revisa consola');
+                })
+                .finally(() => {
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                });
+        });
+    }
+});
